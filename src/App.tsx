@@ -11,7 +11,7 @@ function App() {
   return (
     <article>
       <UpdatedDataNotification
-        hasNewData={state.hasNewData}
+        hasNewData={state.newValue != null && state.value !== state.newValue}
         onAcceptNewData={() => dispatch(CounterActions.acceptNewData())}
         onDiscardNewData={() => dispatch(CounterActions.discardNewData())}
       >

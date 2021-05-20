@@ -59,7 +59,7 @@ export default class CounterActions {
           dispatch(CounterActions.newDataDetected(updatedValue));
         }
       });
-    }, 12000);
+    }, 7000);
     return runningUpdateDetectionTimeout;
   };
 }

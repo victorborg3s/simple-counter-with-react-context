@@ -19,7 +19,6 @@ const mapActionTypeToReducer = {
   [CounterActions.NEW_DATA_DETECTED]: (state: CounterState, payload: { newValue: number }): CounterState => {
     return {
       ...state,
-      hasNewData: true,
       newValue: payload.newValue,
     };
   },
@@ -31,14 +30,12 @@ const mapActionTypeToReducer = {
       ...state,
       value: state.newValue,
       newValue: null,
-      hasNewData: false,
     };
   },
   [CounterActions.DISCARD_NEW_DATA]: (state: CounterState): CounterState => {
     return {
       ...state,
       newValue: null,
-      hasNewData: false,
     };
   },
 };

@@ -2,7 +2,7 @@ let counter = 0;
 
 setInterval(() => {
   counter += 1;
-}, 10000);
+}, 5000);
 
 export default class CounterApi {
   public static increment(): Promise<number> {

@@ -15,7 +15,6 @@ const initialState: CounterState = {
   status: NetworkStatus.idle,
   value: 0,
   newValue: null,
-  hasNewData: false,
 };
 
 function CounterProvider({ children }: CounterProviderProps) {
