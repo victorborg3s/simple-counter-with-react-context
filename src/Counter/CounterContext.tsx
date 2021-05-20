@@ -27,6 +27,7 @@ function CounterProvider({ children }: CounterProviderProps) {
     </CounterStateContext.Provider>
   )
 }
+
 function useCounter() {
   const context = React.useContext(CounterStateContext)
   if (context === undefined) {
